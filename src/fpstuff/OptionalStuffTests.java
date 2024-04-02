@@ -5,7 +5,7 @@ import java.util.function.BiFunction;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class OptionalStuffTestCases {
+public class OptionalStuffTests {
 
 
     @Test

@@ -13,5 +13,6 @@ public class OptionalStuffTests {
         BiFunction<Integer, Integer, Integer> add = Integer::sum;
         Assertions.assertEquals(Optional.empty(), OptionalStuff.liftA2(add, Optional.of(4), Optional.empty()));
         Assertions.assertEquals(Optional.of(9), OptionalStuff.liftA2(add, Optional.of(4), Optional.of(5)));
+        Assertions.assertEquals(Optional.of(9), OptionalStuff.liftA2(add).apply(Optional.of(4), Optional.of(5)));
     }
 }
